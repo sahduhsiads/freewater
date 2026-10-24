@@ -30,7 +30,7 @@ if (url.indexOf(deviceOld) != -1 || url.indexOf(deviceNew) != -1) {
     // 对应 name.txt 的逻辑（修改用户信息）
     if (obj.resultObject && obj.resultObject.user) {
         obj.resultObject.user.nickName = "哥2"; 
-        obj.resultObject.user.realName = "哥";
+        obj.resultObject.user.realName = "哥23";
         obj.resultObject.user.studentNum = "88888888";
         obj.resultObject.user.amount = "2026";
         obj.resultObject.user.freeMoney = "666";
