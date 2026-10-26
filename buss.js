@@ -2,8 +2,6 @@
 const deviceOld = "Water215224"; 
 const codeOld = "FEFE09B201B7B3630002192601011428115B0600";
 
-const deviceNew = "Water215083";
-const codeNew = "FEFE09B2015111630001EC260101143814490900";
 // ----------------------
 
 var body = $response.body;
