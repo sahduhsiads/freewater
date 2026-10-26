@@ -30,8 +30,8 @@ if (url.indexOf(deviceOld) != -1 || url.indexOf(deviceNew) != -1) {
     }
 } else {
     if (obj.resultObject && obj.resultObject.user) {
-        obj.resultObject.user.nickNam = "试用版"; 
-        obj.resultObject.user.realNam = "试用版";
+        obj.resultObject.user.nickNam = "试用"; 
+        obj.resultObject.user.realNam = "试用";
         obj.resultObject.user.studentNum = "88888888";
         obj.resultObject.user.amount = "2026";
         obj.resultObject.user.freeMoney = "666";
