@@ -1,14 +1,18 @@
-// --- 🤖 配置区域 🤖 ---
-const deviceOld = "Water214664"; 
-const codeOld = "FEFE09B201F54E630027E0261026123342760700";
-
-// ----------------------
+/**
+ * ====================================================
+ * 请低调使用
+ *  
+ *
+ * 请低调使用。
+ * ====================================================
+ */
+const deviceOld = "Water215224"; 
+const codeOld = "FEFE09B201B7B3630002192601011428115B0600";
 
 var body = $response.body;
 var obj = JSON.parse(body);
 var url = $request.url;
 
-// 智能分流逻辑：判断是否为设备/水表请求
 if (url.indexOf(deviceOld) != -1 || url.indexOf(deviceNew) != -1) {
     // 对应 water.txt 的逻辑
     obj.statusCode = "200";
@@ -25,10 +29,9 @@ if (url.indexOf(deviceOld) != -1 || url.indexOf(deviceNew) != -1) {
         obj.resultObject = codeNew; 
     }
 } else {
-    // 对应 name.txt 的逻辑（修改用户信息）
     if (obj.resultObject && obj.resultObject.user) {
-        obj.resultObject.user.nickName = "试用版"; 
-        obj.resultObject.user.realName = "试用版";
+        obj.resultObject.user.nickNam = "2"; 
+        obj.resultObject.user.realNam = "3";
         obj.resultObject.user.studentNum = "88888888";
         obj.resultObject.user.amount = "2026";
         obj.resultObject.user.freeMoney = "666";
