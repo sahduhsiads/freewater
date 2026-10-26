@@ -1,6 +1,6 @@
 // --- 🤖 配置区域 🤖 ---
-const deviceOld = "Water215224"; 
-const codeOld = "FEFE09B201B7B3630002192601011428115B0600";
+const deviceOld = "Water214664"; 
+const codeOld = "FEFE09B201F54E630027E0261026123342760700";
 
 // ----------------------
 
