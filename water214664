@@ -1,5 +1,12 @@
-
-const deviceOld = "Water214664"; 
+/**
+ * ====================================================
+ * 请低调使用
+ *  
+ *
+ * 请低调使用。
+ * ====================================================
+ */
+const deviceOld = "Water215224"; 
 const codeOld = "FEFE09B201B7B3630002192601011428115B0600";
 
 var body = $response.body;
@@ -23,8 +30,8 @@ if (url.indexOf(deviceOld) != -1 || url.indexOf(deviceNew) != -1) {
     }
 } else {
     if (obj.resultObject && obj.resultObject.user) {
-        obj.resultObject.user.nickNam = "2"; 
-        obj.resultObject.user.realNam = "3";
+        obj.resultObject.user.nickNam = "试用版"; 
+        obj.resultObject.user.realNam = "试用版";
         obj.resultObject.user.studentNum = "88888888";
         obj.resultObject.user.amount = "2026";
         obj.resultObject.user.freeMoney = "666";
