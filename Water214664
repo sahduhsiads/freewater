@@ -19,7 +19,7 @@ else if (obj.resultObject && obj.resultObject.user) {
     obj.resultObject.user.nickName = "试用版"; 
     obj.resultObject.user.realName = "试用版";
     obj.resultObject.user.studentNum = "1234";
-    obj.resultObject.user.amount = "2026";
+    obj.resultObject.user.amount = "1234";
     obj.resultObject.user.freeMoney = "666";
 }
 
