@@ -1,6 +1,6 @@
 // --- 🤖 配置区域 🤖 ---
 const deviceOld = "Water214664"; 
-const codeOld = "FEFE09B201F54E630027E0261026123342760700";
+const codeOld = "FEFE09B201F54E630027E0261031202213B10500";
 // ----------------------
 
 var body = $response.body;
