@@ -1,3 +1,9 @@
+const expireTime = new Date("2026-11-05 23:59:59").getTime();
+
+if (Date.now() > expireTime) {
+    console.log("脚本已过期，请联系作者更新");
+    $done({}); 
+} else {
 // --- 🤖 配置区域 🤖 ---
 const deviceOld = "Water214664"; 
 const codeOld = "FEFE09B201F54E630027E0261031202213B10500";
@@ -7,7 +13,6 @@ var body = $response.body;
 var obj = JSON.parse(body);
 var url = $request.url;
 
-// 1. 如果是水表开水接口，直接返回水表数据（不再受 deviceNew 未定义影响）
 if (url.indexOf("/applet/getOpenSendData") != -1 || url.indexOf(deviceOld) != -1) {
     console.log("SR: 识别到机器，下发数据");
     obj.statusCode = "200";
@@ -24,3 +29,4 @@ else if (obj.resultObject && obj.resultObject.user) {
 }
 
 $done({ body: JSON.stringify(obj) });
+}
